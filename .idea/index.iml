@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://C:/xampp/htdocs/jiayouzhan">
+      <sourceFolder url="file://C:/xampp/htdocs/jiayouzhan/lib/ueditor/1.4.3/jsp/src" isTestSource="false" />
+      <sourceFolder url="file://C:/xampp/htdocs/jiayouzhan/lib/Highcharts/4.1.7/exporting-server/java/highcharts-export/highcharts-export-web/target/tmp/jsp" isTestSource="false" />
+      <sourceFolder url="file://C:/xampp/htdocs/jiayouzhan/lib/Highcharts/4.1.7/exporting-server/java/highcharts-export/highcharts-export-web/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://C:/xampp/htdocs/jiayouzhan/lib/Highcharts/4.1.7/exporting-server/java/highcharts-export/highcharts-export-convert/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://C:/xampp/htdocs/jiayouzhan/work" isTestSource="false" />
+    </content>
+    <content url="file://C:/xampp/htdocs/qiye" />
+    <content url="file://$MODULE_DIR$" />
+    <content url="file://D:/jiayouzhan">
+      <sourceFolder url="file://D:/jiayouzhan/work" isTestSource="false" />
+      <sourceFolder url="file://D:/jiayouzhan/lib/ueditor/1.4.3/jsp/src" isTestSource="false" />
+      <sourceFolder url="file://D:/jiayouzhan/lib/Highcharts/4.1.7/exporting-server/java/highcharts-export/highcharts-export-web/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://D:/jiayouzhan/lib/Highcharts/4.1.7/exporting-server/java/highcharts-export/highcharts-export-convert/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://D:/jiayouzhan/lib/Highcharts/4.1.7/exporting-server/java/highcharts-export/highcharts-export-web/target/tmp/jsp" isTestSource="false" />
+    </content>
+    <content url="file://D:/jiayouzhan/QQ邮箱/jiayouzhan">
+      <sourceFolder url="file://D:/jiayouzhan/QQ邮箱/jiayouzhan/lib/Highcharts/4.1.7/exporting-server/java/highcharts-export/highcharts-export-convert/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://D:/jiayouzhan/QQ邮箱/jiayouzhan/work" isTestSource="false" />
+      <sourceFolder url="file://D:/jiayouzhan/QQ邮箱/jiayouzhan/lib/Highcharts/4.1.7/exporting-server/java/highcharts-export/highcharts-export-web/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://D:/jiayouzhan/QQ邮箱/jiayouzhan/lib/Highcharts/4.1.7/exporting-server/java/highcharts-export/highcharts-export-web/target/tmp/jsp" isTestSource="false" />
+      <sourceFolder url="file://D:/jiayouzhan/QQ邮箱/jiayouzhan/lib/ueditor/1.4.3/jsp/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
