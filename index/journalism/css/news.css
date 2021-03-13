@@ -14,7 +14,7 @@ a{
 	color: black;
 }
 a:hover{
-	color:#0066BE;
+	color:#d90000;
 }
 ul li{
 	list-style: none;
@@ -111,7 +111,7 @@ hr{
 	position:relative;
 	background: #3e3d43;
 	height: 54px;
-	width: 140px;
+	width: 160px;
 	line-height: 54px;
 	text-align: center;
 	font-size: 16px;
@@ -139,10 +139,10 @@ hr{
 }
 .news_top{
 	width: 1120px;
-	height: 400px;
+	height: 380px;
 	margin-left: 370px;
-	margin-top: 80px;
 	margin: 0 auto;
+	margin-top: 60px;
 }
 .image_icon_div{
 	float: left;
@@ -336,7 +336,7 @@ hr{
 .menu_yinxiao{
 	float: left;
 	margin-top: 55px;
-	margin-left: 10px;
+	margin-left: 30px;
 	width: 84px;
 	height: 100px;
 

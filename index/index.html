@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>111</title>
+	<title>首页</title>
 	<link rel="stylesheet" type="text/css" href="css/index.css" />
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
@@ -19,7 +19,7 @@
 		</div>
 		<div class="header_writing">
 		<span>邮箱</span>
-		<a href="#"><div class="header_QQ">1047797633@qq.com</div></a>
+		<a href="mailto:1047797633@qq.com"><div class="header_QQ">1047797633@qq.com</div></a>
 		</div>
 
 		<div class="header_image_two">
@@ -27,7 +27,7 @@
 		</div>
 		<div class="header_writing_two">
 		<span>联系电话</span>
-		<a href="#"><div class="header_QQ_two">12345-67891234</div></a>
+		<a href="tel:123456-67891234"><div class="header_QQ_two">12345-67891234</div></a>
 		</div>
 	</div>
 	<div class="header_chinese">
@@ -39,6 +39,7 @@
 
 
 <div class="nav_box">
+	
 		<ul>
 			<a href="index.html">
 				<li class="nav_box_first">首页</li>
@@ -60,50 +61,45 @@
 						<li><a href="journalism/company.html" >网站公告</a></li>
 					</ul>
 				</li>
-			<a href="#">
+			<a href="parent/performance.html">
 				<li>工程业绩
 			</a>
 						<ul>
-							<li><a href="#" >电厂 电力 能源</a></li>
-							<li><a href="#" >科技 文教 医疗</a></li>
-							<li><a href="#" >化学 冶金 钢铁</a></li>
-							<li><a href="#" >交通 机场 铁道</a></li>
+							<li><a href="parent/dianchang.html" >电厂 电力 能源</a></li>
+							<li><a href="parent/keji.html" >科技 文教 医疗</a></li>
+							<li><a href="parent/huaxue.html" >化学 冶金 钢铁</a></li>
+							<li><a href="parent/jiaotong.html" >交通 机场 铁道</a></li>
 						</ul>
 				</li>
-			<a href="#">
+			<a href="services/service.html">
 				<li>营销服务
 			</a>
 						<ul>
-							<li><a href="#" >服务网络</a></li>
-							<li><a href="#" >销售服务</a></li>
+							<li><a href="services/service.html" >服务网络</a></li>
+							<li><a href="services/guarantee.html" >销售承诺</a></li>
 						</ul>
 				</li>
-			<a href="#">
-				<li>资料下载
-			</a>
-						<ul>
-							<li><a href="#" >产品样本</a></li>
-						</ul>
-				</li>
-			<a href="#">
+			<a href="company/about-us.html">
 				<li>走进杭申		
 			</a>
 						<ul>
-							<li><a href="#" >企业简介</a></li>
-							<li><a href="#" >企业技术</a></li>
-							<li><a href="#" >工艺质量</a></li>
+							<li><a href="company/about-us.html" >企业简介</a></li>
+							<li><a href="company/company-awards.html" >企业技术</a></li>
+							<li><a href="company/product-awards.html" >工艺质量</a></li>
 						</ul>
 				</li>
-			<a href="#"><li>联系我们</li></a>
+			<a href="contact/contact-us.html"><li>联系我们</li></a>
 		</ul>
+	
 </div>
 
 <div class="image_carousel">
 	<div class="big_image">
+
         <ul id="banner">
-            <li><img src="image/index01.jpg" alt=""></li>
-            <li><img src="image/index02.jpg" alt=""></li>
-            <li><img src="image/index03.jpg" alt=""></li>
+            <li><img src="image/index01.jpg" id="img"></li>
+            <li><img src="image/index02.jpg" id="img"></li>
+            <li><img src="image/index03.jpg" id="img"></li>
         </ul>
         <ul id="controls">
             <li class="star"></li>
@@ -115,18 +111,15 @@
 
 <div class="big_search">
 <div class="search">
-	<div class="search_writing">产品搜索<br>PRODUCT SEARCH</div>
-	<div>
-		<input type="text" class="search_text" placeholder=" 请输入关键词">
-	</div>
-		<select class="search_select">
-			<option value>--请选择产品分类--</option>
-			<option>抵押配电</option>
-			<option>中押配电</option>
-			<option>高押配电</option>
+	<div class="search_writing">产品类目<br>PRODUCT SEARCH</div>
+		<select class="search_select" id="myselect">
+			<option value="1">--请选择产品分类--</option>
+			<option value="2">低压配电</option>
+			<option value="3">中压配电</option>
+			<option value="4">新能源</option>
 		</select>
 
-	<button type="submit" class="search_image">搜索</button>
+	<button type="button" class="search_image" onclick="search();">搜索</button>
 </div>
 </div>
 
@@ -134,75 +127,96 @@
 		<div class="section_title">
 			<span>-------产品目录-------</span>
 			<div class="section_div">
-				<a href="#"><img src="image/10.jpg" class="section_image"></a>
+				<div class="image_product">
+					<a href="product_center/page2.html">
+						<img src="image/10.jpg" class="section_image">
+					</a>
+				</div>
 				<div class="section_div_product">
-				<a href="#">低压配电</a>
+				<a href="product_center/page2.html">低压配电</a>
 				</div>
 			</div>
 			<div class="section_div">
-				<a href="#"><img src="image/11.jpg" class="section_image"></a>
+				<div class="image_product">
+					<a href="product_center/page3.html">
+						<img src="image/11.jpg" class="section_image">
+					</a>
+				</div>
 				<div class="section_div_product">
-				<a href="#">中亚配电</a>
+				<a href="product_center/page3.html">中亚配电</a>
+				</div>
+			</div>
+
+			<div class="section_div">
+				<div class="image_product">
+					<a href="product_center/page4.html">
+						<img src="image/12.jpg" class="section_image">
+					</a>
+				</div>
+				<div class="section_div_product">
+					<a href="product_center/page4.html">新能源</a>
 				</div>
 			</div>
 			<div class="section_div">
-				<a href="#"><img src="image/12.jpg" class="section_image"></a>
-				<div class="section_div_product">
-				<a href="#">工业控制与保护</a>
+				<div class="image_product">
+					<a href="product_center/page5.html">
+						<img src="image/13.jpg" class="section_image">
+					</a>
 				</div>
-			</div>
-			<div class="section_div">
-				<a href="#"><img src="image/13.jpg" class="section_image"></a>
 				<div class="section_div_product">
-					<a href="#">新能源</a>
-				</div>
-			</div>
-			<div class="section_div">
-				<a href="#"><img src="image/14.jpg" class="section_image"></a>
-				<div class="section_div_product">
-					<a href="#">成套设备</a>
+					<a href="product_center/page5.html">成套设备</a>
 				</div>
 			</div>
 			<div class="text-center">
-			<a class="read_more" href="#">更多产品>></a>
+			<a class="read_more" href="product_center/center.html">更多产品>></a>
 			</div>
 		</div>
 
 
-		<div class="section_title">
+		<div class="section_title2">
 			<span>-------工程业绩-------</span>
-			<div class="section_div">
-				<a href="#"><img src="image/15.jpg" class="section_image"></a>
+			<div class="section_div2">
+				<div class="image_product">
+				<a href="parent/dianchang.html">
+					<img src="image/15.jpg" class="section_image">
+				</a>
+				</div>
 				<div class="section_div_product">
-				<a href="#">电厂 电力 电源</a>
+				<a href="parent/dianchang.html">电厂 电力 电源</a>
 				</div>
 			</div>
-			<div class="section_div">
-				<a href="#"><img src="image/16.jpg" class="section_image"></a>
+			<div class="section_div2">
+				<div class="image_product">
+				<a href="parent/keji.html">
+					<img src="image/16.jpg" class="section_image">
+				</a>
+				</div>
 				<div class="section_div_product">
-				<a href="#">中亚配电</a>
+				<a href="parent/keji.html">科技 文教 医疗</a>
 				</div>
 			</div>
-			<div class="section_div">
-				<a href="#"><img src="image/17.jpg" class="section_image"></a>
+			<div class="section_div2">
+				<div class="image_product">
+				<a href="parent/huaxue.html">
+					<img src="image/17.jpg" class="section_image">
+				</a>
+				</div>
 				<div class="section_div_product">
-				<a href="#">工业控制与保护</a>
+				<a href="parent/huaxue.html">化学 冶金 钢铁</a>
 				</div>
 			</div>
-			<div class="section_div">
-				<a href="#"><img src="image/18.jpg" class="section_image"></a>
-				<div class="section_div_product">
-				<a href="#">新能源</a>
+			<div class="section_div2">
+				<div class="image_product">
+				<a href="parent/jiaotong.html">
+					<img src="image/18.jpg" class="section_image">
+				</a>
 				</div>
-			</div>
-			<div class="section_div">
-				<a href="#"><img src="image/19.jpg" class="section_image"></a>
 				<div class="section_div_product">
-				<a href="#">成套设备</a>
+				<a href="parent/jiaotong.html">交通 机场 铁道</a>
 				</div>
 			</div>
 			<div class="text-center">
-			<a class="read_more" href="#">更多业绩>></a>
+			<a class="read_more" href="parent/performance.html">更多业绩>></a>
 			</div>
 		</div>
 </div>
@@ -227,118 +241,88 @@
 			<div>
 				<ul>
 					<li class="shouye">
-					<a href="#" class="menu_shouye">首页</a>
+					<a href="index.html" class="menu_shouye">首页</a>
 					</li>
 				</ul>
 			</div>
 			<div class="chanpin">
 				<ul>
 					<li>
-					<a href="#" class="menu_chanpin_first">产品中心
+					<a href="product_center/center.html" class="menu_chanpin_first">产品中心
 					</li>
 					<li class="footer_li_style">
-					<a href="#" class="menu_style">低压配电</a>
+					<a href="product_center/page2.html" class="menu_style">低压配电</a>
 					</li>
 					<li class="footer_li_style">
-					<a href="#" class="menu_style">中亚配电</a>
+					<a href="product_center/page3.html" class="menu_style">中亚配电</a>
 					</li>
 					<li class="footer_li_style">
-					<a href="#" class="menu_style">工业控制与保护</a>
-					</li>
-					<li class="footer_li_style">
-					<a href="#" class="menu_style">新能源</a>
-					</li>
-					<li class="footer_li_style">
-					<a href="#" class="menu_style">成套设备</a>
+					<a href="product_center/page4.html" class="menu_style">新能源</a>
 					</li>
 				</ul>
 			</div>
 			<div class="menu_xinwen">
 				<ul>
 					<li>
-					<a href="#" class="menu_chanpin_first">新闻咨询
+					<a href="journalism/news.html" class="menu_chanpin_first">新闻咨询
 					</li>
 					<li class="footer_li_style">
-					<a href="#" class="menu_style">杭申新闻</a>
+					<a href="journalism/company-news.html" class="menu_style">杭申新闻</a>
 					</li>
 					<li class="footer_li_style">
-					<a href="#" class="menu_style">网站公告</a>
+					<a href="journalism/company.html" class="menu_style">网站公告</a>
 					</li>
 				</ul>
 			</div>
 			<div class="menu_gongchen">
 				<ul>
 					<li>
-					<a href="#" class="menu_chanpin_first">工程业绩
+					<a href="parent/performance.html" class="menu_chanpin_first">工程业绩
 					</li>
 					<li class="footer_li_style">
-						<a href="#" class="menu_style">杭申新闻</a>
+						<a href="parent/dianchang.html" class="menu_style">电厂 电力 能源</a>
 					</li>
 					<li class="footer_li_style">
-						<a href="#" class="menu_style">网站公告</a>
+						<a href="parent/keji.html" class="menu_style">科技 文教 医疗</a>
 					</li>
 					<li class="footer_li_style">
-						<a href="#" class="menu_style">杭申新闻</a>
+						<a href="parent/huaxue.html" class="menu_style">化学 冶金 钢铁</a>
 					</li>
 					<li class="footer_li_style">
-						<a href="#" class="menu_style">网站公告</a>
+						<a href="parent/jiaotong.html" class="menu_style">交通 机场 铁道</a>
 					</li>
 				</ul>
 			</div>
 			<div class="menu_yinxiao">
 				<ul>
 					<li>
-					<a href="#" class="menu_chanpin_first">音效服务
+					<a href="services/service.html" class="menu_chanpin_first">营销服务
 					</li>
 					<li class="footer_li_style">
-						<a href="#" class="menu_style">杭申新闻</a>
+						<a href="services/service.html" class="menu_style">服务网络</a>
 					</li>
 					<li class="footer_li_style">
-						<a href="#" class="menu_style">网站公告</a>
+						<a href="services/guarantee.html" class="menu_style">销售承诺</a>
 					</li>
 				</ul>
 			</div>
-			<div class="menu_ziliao">
-				<ul>
-					<li>
-					<a href="#" class="menu_chanpin_first">资料下载
-					</li>
-					<li class="footer_li_style">
-						<a href="#" class="menu_style">杭申新闻</a>
-					</li>
-					<li class="footer_li_style">
-						<a href="#" class="menu_style">网站公告</a>
-					</li>
-					<li class="footer_li_style">
-						<a href="#" class="menu_style">杭申新闻</a>
-					</li>
-					<li class="footer_li_style">
-						<a href="#" class="menu_style">网站公告</a>
-					</li>
-				</ul>
-			</div>
+
 			<div class="menu_zoujin">
 				<ul>
 					<li>
-					<a href="#" class="menu_chanpin_first">走进杭申
+					<a href="company/about-us.html" class="menu_chanpin_first">走进杭申
 					</li>
 					<li class="footer_li_style">
-						<a href="#" class="menu_style">杭申新闻</a>
+						<a href="company/company-awards.html" class="menu_style">杭申新闻</a>
 					</li>
 					<li class="footer_li_style">
-						<a href="#" class="menu_style">网站公告</a>
-					</li>
-					<li class="footer_li_style">
-						<a href="#" class="menu_style">杭申新闻</a>
-					</li>
-					<li class="footer_li_style">
-						<a href="#" class="menu_style">网站公告</a>
+						<a href="company/product-awards.html" class="menu_style">网站公告</a>
 					</li>
 				</ul>
 			</div>
 			<div class="menu_phone">
 				<ul>
-					<li><a href="#" class="menu_chanpin_first">联系方法</a></li>
+					<li><a href="contact/contact-us.html" class="menu_chanpin_first">联系方法</a></li>
 				</ul>	
 			</div>		
 			</div>
@@ -392,6 +376,60 @@
             },2500)
         }
         autoPlay();
+		/*
+		window.onload = function(){
+			var myimg = document.getElementById("img");
+			var myleft = document.getElementById("left");
+			var myright = document.getElementById("right");
+			var mysrc=["index01.jpg","index02.jpg","index03.jpg"];
+			var num = 0;
+			var on = true;
+
+			function fn(){
+				myimg.src = mysrc[num];
+			}
+			fn();
+
+			myleft.onclick = function(){
+            num--;  //点击左边的箭头那么就是num--
+            if(on){  //onOff默认是true所以就是走循环了
+                if(num==-1){    //在一直减的过程中，数组里最小的就是0，所以等于-1的时候要循环下去所以让它显示最后一张
+                    num=mysrc.length-1;
+                }
+
+            }
+            fn();//判断好之后记得调用函数
+        	};
+        	//相反下面就是点击左边的箭头所做出的判断，道理同上
+        	myright.onclick = function(){
+				num++;
+				if(on){
+					if(num==mysrc.length){
+						num=0;
+					}
+				}
+				fn();
+        	}
+		}	
+		*/
+		function search(){
+			var obj = document.getElementById("myselect");
+			var sid = myselect.selectedIndex;
+				if(myselect[sid].value == 1){
+					alert("请选择产品的分类")
+				}
+				if(myselect[sid].value == 2){
+					window.open("product_center/page2.html");
+				}
+				if(myselect[sid].value == 3){
+					window.open("product_center/page3.html");
+				}
+				if(myselect[sid].value == 4){
+					window.open("product_center/page4.html");
+				}
+					
+				
+}
     </script>
 </body>
 </html>
